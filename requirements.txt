@@ -1,0 +1,7 @@
+# 核心 HTTP、UDP、规则解析和千问客户端只使用 Python 标准库。
+# 以下是 LinkSoul AgentSDK 1.4.0a0 的运行依赖。
+websocket-client>=1.7.0,<2
+PyJWT>=2.8.0,<3
+
+# LinkSoul SDK 当前通过智元官方离线 wheel 分发。
+./linksoul_agentsdk-1.4.0a0-py3-none-any.whl

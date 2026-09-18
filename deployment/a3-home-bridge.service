@@ -1,0 +1,14 @@
+[Unit]
+Description=Agibot A3 LinkSoul Xiaohong SE home bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/agibot/data/home/agi/Desktop/a3_home_bridge
+ExecStart=/bin/bash /agibot/data/home/agi/Desktop/a3_home_bridge/run_linksoul_qwen.sh
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

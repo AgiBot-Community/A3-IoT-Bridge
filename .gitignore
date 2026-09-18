@@ -83,6 +83,8 @@ celerybeat-schedule
 
 # Environments
 .env
+.env.*
+!.env.example
 .venv
 env/
 venv/
@@ -102,3 +104,17 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# A3 home-agent local configuration and credentials
+config.json
+*.key
+*.secret
+secret*.txt
+*secret*.txt
+*api_key*.txt
+state/*.json
+*.bak
+*.bak_*
+智元A3-HDU智能家居Agent交付版.zip
+models/*.zip
+models/*.part*

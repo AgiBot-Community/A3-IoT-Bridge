@@ -1,0 +1,37 @@
+{
+  "gateway": {
+    "base_url": "http://127.0.0.1:18080",
+    "bearer_token": "dev-token",
+    "connect_timeout_seconds": 1.0,
+    "read_timeout_seconds": 5.0,
+    "scene_read_timeout_seconds": 10.0,
+    "retry_count": 1,
+    "discovery": {
+      "enabled": false
+    }
+  },
+  "default_room": "living_room",
+  "rooms": {
+    "living_room": {"display_name": "客厅", "aliases": ["客厅", "大厅"], "light": "light_1", "fan": "fan_1"},
+    "master_bedroom": {"display_name": "主卧", "aliases": ["主卧", "主卧室"], "light": "light_2", "fan": "fan_2"},
+    "second_bedroom": {"display_name": "次卧", "aliases": ["次卧", "次卧室", "客卧"], "light": "light_3"}
+  },
+  "sensors": {"temperature_humidity": "temperature_humidity", "illuminance": "illuminance"},
+  "device_names": {
+    "light_1": "客厅灯", "light_2": "主卧灯", "light_3": "次卧灯",
+    "fan_1": "客厅风扇", "fan_2": "主卧风扇",
+    "temperature_humidity": "温湿度传感器", "illuminance": "光照传感器", "alarm": "声光报警器"
+  },
+  "scene_phrases": {
+    "normal_mode": ["进入普通模式", "恢复普通模式", "退出自动模式", "关闭自动模式"],
+    "home_mode": ["进入居家模式", "切换居家模式", "居家模式", "回家模式", "我回来了", "我回家了", "回家了", "我到家了", "到家了", "我回来啦"],
+    "away_mode": ["进入离家模式", "切换离家模式", "离家模式", "外出模式", "我要出门了", "我出门了"],
+    "all_lights_on": ["打开所有灯", "打开全部灯", "把灯都打开", "全屋开灯"],
+    "all_lights_off": ["关闭所有灯", "关闭全部灯", "把灯都关掉", "全屋关灯"],
+    "all_fans_on": ["打开所有风扇", "打开全部风扇", "把风扇都打开"],
+    "all_fans_off": ["关闭所有风扇", "关闭全部风扇", "把风扇都关掉"],
+    "bright_mode": ["明亮模式", "屋里亮一点", "全屋亮一点"],
+    "ambient_mode": ["氛围模式", "打开氛围灯", "来点氛围感"],
+    "ventilation_mode": ["通风模式", "全屋通风", "屋里太闷了"]
+  }
+}
